@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: annatations
+  name: annotations
   labels: 
     name: sathish
     place: hyd
