@@ -13,8 +13,12 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     env:
-    - name : name
+    - name : first_name
       valueFrom: 
         configMapKeyRef:
           name: sathish  
-          key: name
+          key: first_name
+    - name : last_name
+      valueFrom:
+        configMapKeyRef:
+          key: last_name
