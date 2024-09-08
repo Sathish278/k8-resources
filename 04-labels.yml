@@ -1,12 +1,11 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: lables
-  lables: 
+  name: labels
+  labels: 
     name: sathish
     place: hyd
 spec:
   containers:
   - name: nginx
     image: nginx
-  
