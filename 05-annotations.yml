@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annatations
+  labels: 
+    name: sathish
+    place: hyd
+  annatations:
+    kubernetes.io/created-by: 'sathish reddy'
+    jenkins.build.url: 'https://jenkins.sathishreddy.online/expense/job/backend/54'
+spec:
+  containers:
+  - name: nginx
+    image: nginx
