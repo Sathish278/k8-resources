@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sathish
+data:
+  first_name: "Sathish Kumar Reddy"
+  last_name: "Ambati"
+  github: "https://github.com/Sathish278/k8-resources"
+
