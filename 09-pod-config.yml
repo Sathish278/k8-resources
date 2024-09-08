@@ -12,14 +12,17 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "500m"
-    env:
-    - name : first-name
-      valueFrom: 
-        configMapKeyRef:
-          name: sathish  
-          key: first-name
-    - name : last-name
-      valueFrom:
-        configMapKeyRef:
-          name: sathish
-          key: last-name
+    envFrom:
+    - configMapRef:
+        name: sathish
+    # env:
+    # - name : first-name
+    #   valueFrom: 
+    #     configMapKeyRef:
+    #       name: sathish  
+    #       key: first-name
+    # - name : last-name
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: sathish
+    #       key: last-name
