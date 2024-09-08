@@ -17,8 +17,9 @@ spec:
       valueFrom: 
         configMapKeyRef:
           name: sathish  
-          key: first_name
+          key: first-name
     - name : last-name
       valueFrom:
         configMapKeyRef:
-          key: last_name
+          name: sathish
+          key: last-name
