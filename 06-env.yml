@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env-test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: sathish
+      value: 'name'
+    - name: reddy
+      value: 'lastname'
