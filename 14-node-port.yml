@@ -13,4 +13,5 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #target-port
+    nodePort: 32760
 # service is only with in cluster (intranet) for internet or external cluster we need to use node-port
