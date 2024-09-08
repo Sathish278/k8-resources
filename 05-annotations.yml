@@ -5,7 +5,7 @@ metadata:
   labels: 
     name: sathish
     place: hyd
-  annatations:
+  annotations:
     kubernetes.io/created-by: 'sathish reddy'
     jenkins.build.url: 'https://jenkins.sathishreddy.online/expense/job/backend/54'
 spec:
