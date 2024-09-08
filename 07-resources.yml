@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: env-test
+  name: resources
 spec:
   containers:
   - name: nginx
@@ -15,8 +15,3 @@ spec:
       limits:
         cpu: "100m"
         memory: "128Mi"
-    env:
-    - name: sathish
-      value: 'name'
-    - name: reddy
-      value: 'lastname'

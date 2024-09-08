@@ -6,6 +6,25 @@ spec:
   containers:
   - name: nginx
     image: nginx
+    resources:
+      # soft limit
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      # limits should be atleast or more than requests i.e hard limit
+      limits:
+        cpu: "100m"
+        memory: "128Mi"
   - name: alma
     image: "almalinux:9"
-    command: ["sleep","2000"] 
+    command: ["sleep","2000"]
+    resources:
+      # soft limit
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      # limits should be atleast or more than requests i.e hard limit
+      limits:
+        cpu: "100m"
+        memory: "128Mi"
+    
