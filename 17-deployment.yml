@@ -8,7 +8,7 @@ metadata:
     purpose: deployment
     tier: web
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -27,10 +27,14 @@ spec:
       - name: nginx
         image: nginx
         resources:
-        # soft limit
-        requests:
+          # soft limit
+          requests:
           cpu: "100m"
           memory: "128Mi"
+          # limits should be atleast or more than requests i.e hard limit
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
       
 ---
 apiVersion: v1
